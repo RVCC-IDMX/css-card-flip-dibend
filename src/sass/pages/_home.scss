@@ -2,15 +2,18 @@
 @use "../abstracts/variables" as var;
 @use "../base/typography" as type;
 
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@font-face {
+  font-family: Alkatra;
+  src: url('/fonts/Alkatra-VariableFont_wght.woff2') format('woff2');
+}
 
 :root {
   --level-one: translateZ(3rem);
   --level-two: translateZ(6rem);
   --level-three: translateZ(9rem);
   
-  --fw-normal: 400;
-  --fw-bold: 700;
+  --fw-normal: 600;
+  --fw-bold: 800;
 }
 
 *, *::before, *::after {
@@ -22,7 +25,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Alkatra', sans-serif;
   background-color: var.$bg-color;
 }
 
@@ -35,8 +38,13 @@ body {
   text-align: center;
   position: relative;
   padding: 15em 5em;
-  transition: transform 3s;
   transform-style: preserve-3d;
+}
+
+@media (hover) {
+  .card__content {
+    transition: transform 3s;
+  }
 }
 
 .card:hover .card__content {
@@ -66,7 +74,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   text-shadow: 2px 2px 2px whitesmoke;
-  color: var.$bg-color;
+  color: #4f33ff;
 }
 
 .card__front::before {
@@ -129,5 +137,16 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: .01ms !important;
+    animation-duration: .01ms !important;
+    transition: .01ms !important
+  }
+
+  .card__content {
+    transform: rotateY(.5turn);
+  }
+}
 
 
