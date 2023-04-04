@@ -73,7 +73,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  text-shadow: 2px 2px 2px whitesmoke;
+  text-shadow: 4px 4px 4px whitesmoke;
   color: #4f33ff;
 }
 
@@ -103,6 +103,7 @@ body {
   font-size: .75rem;
   font-weight: var(--fw-bold);
   opacity: .7;
+  text-shadow: 2px 2px 2px whitesmoke;
 }
 
 .card__body {
@@ -110,8 +111,6 @@ body {
   font-weight: var(fw-normal);
   font-size: 1.5rem;
   line-height: 1.6;
-  color: whitesmoke;
-  text-shadow: 2px 2px 2px var.$bg-color;
 }
 
 
@@ -125,10 +124,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.credits {
   color: whitesmoke;
+  text-shadow: 4px 4px 4px black;
 }
 
 @media (pointer: coarse) {
