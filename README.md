@@ -1,4 +1,8 @@
-# IDMX 11ty Sass Starter
+# Crypto Card
+
+### [Front Background Image](https://unsplash.com/photos/I0TDRP0fj6Y)
+### [Back Background Image](https://unsplash.com/photos/FquLC11A1AI)
+### [Favicon](https://unsplash.com/photos/eTKnYl8mR6o)
 
 The set of development scripts in this starter is configured to watch and compile a simple Sass structure using 11ty.
 
