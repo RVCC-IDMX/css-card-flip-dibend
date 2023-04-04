@@ -139,10 +139,14 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-delay: .01ms !important;
     animation-duration: .01ms !important;
-    transition: .01ms !important
+    transition: .01ms !important;
+    scroll-behavior: auto !important;
+    animation-iteration-count: 1 !important;
   }
 
   .card__content {
